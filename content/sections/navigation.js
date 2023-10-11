@@ -72,7 +72,7 @@ export default class Navigation extends Component {
                                     <a href="">Contact me</a>
                                 </NavItem>
                                 <ActionsContainer>
-                                    <a href="https://get.zluri.com/request-demo">
+                                    <a href="https://docs.google.com/document/d/1135hHsakrVmBEKTypAMGYpUE8EvZiUMTQ2q34m37bJo/edit?usp=sharing" target="_blank" rel="noreferrer">
                                         <button>Resume</button>
                                     </a>
                                 </ActionsContainer>
@@ -92,7 +92,7 @@ export default class Navigation extends Component {
                                         <a href="">Contact me</a>
                                     </NavItemMobile>
                                     <ActionsContainer>
-                                        <a href="https://get.zluri.com/request-demo">
+                                        <a href="https://docs.google.com/document/d/1135hHsakrVmBEKTypAMGYpUE8EvZiUMTQ2q34m37bJo/edit?usp=sharing" target="_blank" rel="noreferrer">
                                             <button>Resume</button>
                                         </a>
                                     </ActionsContainer>
