@@ -66,7 +66,7 @@ export default class Navigation extends Component {
                         <NavListWrapper>
                             <ul>
                                 <NavItem>
-                                    <a href="">Email</a>
+                                    <a href="mailto:ananyadesai2929@gmail.com" target="_blank" rel="noreferrer">Email</a>
                                 </NavItem>
                                 <NavItem>
                                     <a href="">Contact me</a>
