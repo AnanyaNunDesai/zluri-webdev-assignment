@@ -69,7 +69,7 @@ export default class Navigation extends Component {
                                     <a href="mailto:ananyadesai2929@gmail.com" target="_blank" rel="noreferrer">Email</a>
                                 </NavItem>
                                 <NavItem>
-                                    <a href="">Contact me</a>
+                                    <a href="tel:7057285644" target="_blank" rel="noreferrer">Contact me</a>
                                 </NavItem>
                                 <ActionsContainer>
                                     <a href="https://docs.google.com/document/d/1135hHsakrVmBEKTypAMGYpUE8EvZiUMTQ2q34m37bJo/edit?usp=sharing" target="_blank" rel="noreferrer">
@@ -89,7 +89,7 @@ export default class Navigation extends Component {
                                         <a href="mailto:ananyadesai2929@gmail.com" target="_blank" rel="noreferrer">Email</a>
                                     </NavItemMobile>
                                     <NavItemMobile>
-                                        <a href="">Contact me</a>
+                                        <a href="tel:7057285644" target="_blank" rel="noreferrer">Contact me</a>
                                     </NavItemMobile>
                                     <ActionsContainer>
                                         <a href="https://docs.google.com/document/d/1135hHsakrVmBEKTypAMGYpUE8EvZiUMTQ2q34m37bJo/edit?usp=sharing" target="_blank" rel="noreferrer">

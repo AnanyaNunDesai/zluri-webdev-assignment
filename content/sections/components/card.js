@@ -1,30 +1,28 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const Card = (props) => {
-    return (
-        <StyledCard backgroundColor={props.backgroundColor}>
-            <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
-            <h1>{props.title}</h1>
-            <h3>{props.image}</h3>
-            <button>Contact Sales</button>
-            <p>{props.description}</p>
-        </StyledCard>
-    );
-}
+  return (
+    <StyledCard backgroundColor={props.backgroundColor} isMiddleCard={props.isMiddleCard}>
+      {props.isMiddleCard && <StyledPopularTitle>Most Popular</StyledPopularTitle>}
+      <h1>{props.title}</h1>
+      <h3>{props.image}</h3>
+      <button>Contact Sales</button>
+      <p>{props.description}</p>
+    </StyledCard>
+  );
+};
 
 export default Card;
 
 const StyledCard = styled.li`
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  position: relative;
+  border-radius: ${(props) => (props.isMiddleCard ? '0 0 20px 20px' : '20px')};
   padding: 20px;
   margin: 2px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   max-width: 300px;
-  font-family: "Sora";
-  background-color: ${props => props.backgroundColor};
-
+  font-family: 'Sora';
+  background-color: ${(props) => props.backgroundColor};
 
   h1 {
     margin-top: 10px;
@@ -47,7 +45,23 @@ const StyledCard = styled.li`
   button {
     border-radius: 40px;
     padding: 15px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     font-weight: 400;
   }
+`;
+
+const StyledPopularTitle = styled.h4`
+  position: absolute;
+  top: -60px; /* Adjust the position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffce70;
+  padding: 0px 20px;
+  border-radius: 20px 20px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  text-align: center; /* Center the text */
+  font-family: 'Lexend';
+  color: #363535;
 `;

@@ -14,7 +14,8 @@ const concepts = [
         title: "Scale",
         image: "Complete SaaS optimization by leveraging license management & financial intelligence",
         description: "Placeholder",
-        backgroundColor: "#FFEEB9"
+        backgroundColor: "#FFEEB9",
+        isMiddleCard: true
     },
     {
         title: "Enterprise",
@@ -36,6 +37,7 @@ const S5 = (props) => {
             title={concept.title}
             description={concept.description}
             backgroundColor={concept.backgroundColor}
+            isMiddleCard={concept.isMiddleCard}
           />
         ))}
       </StyledList>
