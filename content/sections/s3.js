@@ -1,22 +1,31 @@
 import React from "react";
 import styled from 'styled-components';
-import { Container } from "./style";
+import { Container, Wrapper } from "./style";
+import Dropdown from "./dropdown"
 
-const S5 = () => {
+const S3 = () => {
     return (
-        <Container >
-            <Title>
-                <h4>
-                    Solution Here
-                </h4>
-                <p>Put the created component below this.</p>
-            </Title>
-            
-        </Container>
+
+        <StyledWrapper>
+            <Container >
+                <Title>
+                    <h4>
+                        Solution Here
+                    </h4>
+                    <p>Put the created component below this.</p>
+
+                </Title>
+                <Dropdown />
+            </Container>
+        </StyledWrapper>
     )
 }
 
-export default S5
+export default S3
+
+const StyledWrapper = styled(Wrapper)`
+background:#F6F7F9;
+`
 
 const Title = styled.div`
 h4{
