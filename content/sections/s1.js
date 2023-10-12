@@ -11,6 +11,12 @@ const S1 = () => {
                         Solution Here
                     </h4>
                     <p>Answer below this.</p>
+                    <GridLayout>
+                        <GridItem>1st</GridItem>
+                        <GridItem>2nd</GridItem>
+                        <GridItem>3rd</GridItem>
+                        <GridItem>4th</GridItem>
+                    </GridLayout>
                 </Title>
             </Container>
         </StyledWrapper>
@@ -51,4 +57,22 @@ ul{
 li{
     font-size:20px;
 }
+`
+
+const GridLayout = styled.div`
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+gap: 20px;
+
+@media(max-width: 600px) {
+    grid-template-columns: 1fr;
+}
+`
+
+const GridItem = styled.div`
+padding: 80px;
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 20px;
+text-align: center;
 `
