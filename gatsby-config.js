@@ -1,6 +1,5 @@
 module.exports = {
   plugins: [
-    'gatsby-plugin-react-helmet',
     {
       resolve: "gatsby-theme-portfolio-minimal",
       options: {

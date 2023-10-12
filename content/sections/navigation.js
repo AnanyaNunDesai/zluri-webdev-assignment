@@ -86,7 +86,7 @@ export default class Navigation extends Component {
                             <NavListWrapperMobile mobile={true}>
                                 <ul>
                                     <NavItemMobile>
-                                        <a href="">Email</a>
+                                        <a href="mailto:ananyadesai2929@gmail.com" target="_blank" rel="noreferrer">Email</a>
                                     </NavItemMobile>
                                     <NavItemMobile>
                                         <a href="">Contact me</a>

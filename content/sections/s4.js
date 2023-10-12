@@ -1,31 +1,28 @@
-import React from 'react';
+import React from "react";
 import styled from 'styled-components';
 import { Container, Wrapper } from "./style";
-import Dropdown from './dropdown'; // Adjust the import path based on your project structure
-
+// import Dropdown from "./dropdown"
+import DropdownImg from "./drop-image";
 
 const S4 = () => {
     return (
+
         <StyledWrapper>
-            <DropdownContainer>
+            <Container >
                 <Title>
                     <h4>
                         Solution Here
                     </h4>
                     <p>Put the created component below this.</p>
-                    <Dropdown />
+
                 </Title>
-            </DropdownContainer>
+                <DropdownImg />
+            </Container>
         </StyledWrapper>
-    );
-};
+    )
+}
 
-export default S4;
-
-const DropdownContainer = styled(Container)`
-  display: inline-block;
-`;
-
+export default S4
 
 const StyledWrapper = styled(Wrapper)`
 background:#F6F7F9;
@@ -51,4 +48,12 @@ font-weight: 400;
 line-height: 28px;
 }
 `
-// Rest of the styles and components remain the same as provided in the previous example.
+const QuestionsDiv= styled.div`
+ul{
+    display:flex;
+    flex-direction:column;
+}
+li{
+    font-size:20px;
+}
+`
