@@ -15,24 +15,28 @@ import Header from "../../content/sections/header";
 import Layout from "../../content/sections/layout";
 import S3 from "../../content/sections/s3";
 import S4 from "../../content/sections/s4";
+import Q5 from "../../content/sections/q5";
 
 export default function IndexPage() {
   return (
-    <Layout>
-      <Seo title="Web development assignment for Zluri" />
-      <Navigation />
-      <div>
-        <Header />
-        <QuestionsHeading />
-        <Question />
-        <Q1 />
-        <S1 />
-        <Q3 />
-        <S3 />
-        <Q4 />
-        <S4 />
-        <Feedback />
-      </div>
-    </Layout>
+    <div>
+      <Layout>
+        <Seo title="Ananya Desai" />
+        <Navigation />
+        <div>
+          <Header />
+          <QuestionsHeading />
+          <Question />
+          <Q1 />
+          <S1 />
+          <Q3 />
+          <S3 />
+          <Q4 />
+          <S4 />
+          <Q5 />
+          <Feedback />
+        </div>
+      </Layout>
+    </div>
   );
 }
