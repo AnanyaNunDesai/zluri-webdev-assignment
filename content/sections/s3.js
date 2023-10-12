@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 import { Container, Wrapper } from "./style";
-import Dropdown from "./dropdown"
+import Dropdown from "./components/dropdown"
 
 const S3 = () => {
     return (
@@ -24,7 +24,7 @@ const S3 = () => {
 export default S3
 
 const StyledWrapper = styled(Wrapper)`
-background:#F6F7F9;
+background:#E1E8F8;
 `
 
 const Title = styled.div`

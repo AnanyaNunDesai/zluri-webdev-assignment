@@ -14,10 +14,10 @@ const Q5 = () => {
                     <h3>
                         Try to recreate the following component and display it below.
                     </h3>
-                    <p>You can make use of the figma file for this. <a href="https://www.figma.com/file/HxNZcchT8DOI1UmMQY52Hb/Web-Development-Assignment?type=design&node-id=1-4&mode=design&t=BFbRQwTqbP479xam-4" target="_blank" > Click here </a> </p>
+                    <p>You can make use of the figma file for this. <StyledLink href="https://www.figma.com/file/HxNZcchT8DOI1UmMQY52Hb/Web-Development-Assignment?type=design&node-id=1-4&mode=design&t=BFbRQwTqbP479xam-4" target="_blank" rel="noreferrer"> Click here. </StyledLink> </p>
                 </Title>
                 <QuestionsDiv>
-                    <img src={component} alt="component" />
+                    
                 </QuestionsDiv>
             </Container>
         </StyledWrapper>
@@ -26,32 +26,40 @@ const Q5 = () => {
 
 export default Q5
 
-const StyledWrapper=styled(Wrapper)`
+const StyledWrapper = styled(Wrapper)`
 `
 
 const Title = styled.div`
 h3{
     font-size: 32px;
-font-family: Lexend Medium;
-font-style: normal;
-font-weight: 500;
-line-height: 40px;
-letter-spacing: -0.4px;
+    font-family: Lexend Medium;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -0.4px;
     span{
         background:#FAE090;
     }
 }
 p{
     font-size: 18px;
-font-family: Lexend Regular;
-font-style: normal;
-font-weight: 400;
-line-height: 28px;
+    font-family: Lexend Regular;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+h4{
+    font-family: Lexend;
 }
 `
+
+const StyledLink = styled.a`
+    color: blue; /* Set the color to blue */
+    text-decoration: underline; /* Underline the text */
+`
+
 const QuestionsDiv = styled.div`
 img{
     width:100%;
 }
-
 `

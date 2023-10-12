@@ -1,18 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import Desert from '../images/desert.png';
-import Ocean from '../images/sea.png';
-import Forest from '../images/trees.png';
-import Mountain from '../images/Mountains.png';
 
-const options = [
-    { label: 'Mountain', imageSrc: Mountain },
-    { label: 'Forest', imageSrc: Forest },
-    { label: 'Ocean', imageSrc: Ocean },
-    { label: 'Desert', imageSrc: Desert }
-];
+const options = ['Mountain', 'Forest', 'Ocean', 'Desert'];
 
-const DropdownImg = () => {
+const Dropdown = () => {
     const [selectedOption, setSelectedOption] = useState(null);
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef(null);
@@ -40,44 +31,40 @@ const DropdownImg = () => {
     }, []);
 
     return (
-        <Container>
+        <div>
             <link
                 href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700&display=swap"
                 rel="stylesheet"
             ></link>
-
-            <DropdownContainer ref={dropdownRef}>
-                <DropdownToggle
-                    onClick={handleToggleDropdown}
-                    tabIndex="0" // Make the component focusable
-                    isOpen={isOpen} // Pass isOpen as a prop
-                >
-                    {selectedOption ? selectedOption.label : 'Dropdown'}
-                    <ArrowIcon className="arrow-icon" />
-                </DropdownToggle>
-                {isOpen && (
-                    <DropdownMenu>
-                        {options.map((option) => (
-                            <DropdownMenuItem
-                                key={option.label}
-                                onClick={() => handleSelectOption(option)}
-                            >
-                                {option.label}
-                            </DropdownMenuItem>
-                        ))}
-                    </DropdownMenu>
-                )}
-            </DropdownContainer>
-            {selectedOption && (
-                <ImageContainer>
-                    <Image src={selectedOption.imageSrc} alt={selectedOption.label} />
-                </ImageContainer>
-            )}
-        </Container>
+            <Container>
+                <DropdownContainer ref={dropdownRef}>
+                    <DropdownToggle
+                        onClick={handleToggleDropdown}
+                        tabIndex="0" // Make the component focusable
+                        isOpen={isOpen} // Pass isOpen as a prop
+                    >
+                        {selectedOption || 'Dropdown'}
+                        <ArrowIcon className="arrow-icon" />
+                    </DropdownToggle>
+                    {isOpen && (
+                        <DropdownMenu>
+                            {options.map((option) => (
+                                <DropdownMenuItem
+                                    key={option}
+                                    onClick={() => handleSelectOption(option)}
+                                >
+                                    {option}
+                                </DropdownMenuItem>
+                            ))}
+                        </DropdownMenu>
+                    )}
+                </DropdownContainer>
+            </Container>
+        </div>
     );
 };
 
-export default DropdownImg;
+export default Dropdown;
 
 const Container = styled.div`
   display: flex;
@@ -102,6 +89,7 @@ const DropdownToggle = styled.div`
   width: 225px;
   display: flex;
   justify-content: space-between;
+  font-weight: 400;
   &:hover {
     border-color: #5287E8;
   }
@@ -144,25 +132,6 @@ const DropdownMenuItem = styled.li`
     border-radius: 7px;
     margin: 7px;
   }
-`;
-
-const ImageContainer = styled.div`
-  width: 500px;
-  height: 340px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px; /* Adjust margin as needed */
-  border-radius: 2%;
-  overflow: hidden;
-  background-color: #FFFFFF;
-`;
-
-
-const Image = styled.img`
-  width: 96%;
-  height: 95%;
-  border-radius: 2%;
 `;
 
 const ArrowIcon = styled.div`

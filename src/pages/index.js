@@ -5,7 +5,7 @@ import {
 import Question from "../../content/sections/questions";
 import Q1 from "../../content/sections/q1";
 import S1 from "../../content/sections/s1";
-// import S5 from "../../content/sections/s3";
+import S5 from "../../content/sections/s5";
 import QuestionsHeading from "../../content/sections/q2";
 import Q3 from "../../content/sections/q3";
 import Q4 from "../../content/sections/q4";
@@ -34,6 +34,7 @@ export default function IndexPage() {
           <Q4 />
           <S4 />
           <Q5 />
+          <S5 />
           <Feedback />
         </div>
       </Layout>
