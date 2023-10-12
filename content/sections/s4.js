@@ -25,7 +25,7 @@ const S4 = () => {
 export default S4
 
 const StyledWrapper = styled(Wrapper)`
-background:#F6F7F9;
+background:#E1E8F8;
 `
 
 const Title = styled.div`
