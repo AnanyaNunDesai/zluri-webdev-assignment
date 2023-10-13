@@ -4,44 +4,44 @@ import styled from "styled-components";
 import { Container } from "./style";
 
 const concepts = [
-    {
-        title: "Growth",
-        image: "Discover & manage all your apps in one place",
-        description: [
-          "Complete SaaS discovery",
-          "Unlimited App Integrations",
-          "Unlimited financial integrations",
-          "Complete user and app management",
-          "All financial transactions Basic Reports"
-        ],
-        backgroundColor: '#CBFFEE'
-    },
-    {
-        title: "Scale",
-        image: "Complete SaaS optimization by leveraging license management & financial intelligence",
-        description: [
-          "Complete license management",
-          "Complete vendor & renewal management",
-          "Cost optimization insights",
-          "Budgeting & chargebacks",
-          "Advanced Reports"
-        ],
-        backgroundColor: "#FFEEB9",
-        isMiddleCard: true
-    },
-    {
-        title: "Enterprise",
-        image: "Powerful automations, advanced security & access control that deliver robust & streamlined SaaSOps",
-        description: [
-          "Workflow Automations",
-          "Employee App Store",
-          "Security and Compliance",
-          "Dedicated account manager",
-          "Audit logs",
-          "Custom reports"
-        ],
-        backgroundColor: "#C9E8FF"
-    },
+  {
+    title: "Growth",
+    image: "Discover & manage all your apps in one place",
+    description: [
+      "Complete SaaS discovery",
+      "Unlimited App Integrations",
+      "Unlimited financial integrations",
+      "Complete user and app management",
+      "All financial transactions Basic Reports"
+    ],
+    backgroundColor: '#CBFFEE'
+  },
+  {
+    title: "Scale",
+    image: "Complete SaaS optimization by leveraging license management & financial intelligence",
+    description: [
+      "Complete license management",
+      "Complete vendor & renewal management",
+      "Cost optimization insights",
+      "Budgeting & chargebacks",
+      "Advanced Reports"
+    ],
+    backgroundColor: "#FFEEB9",
+    isMiddleCard: true
+  },
+  {
+    title: "Enterprise",
+    image: "Powerful automations, advanced security & access control that deliver robust & streamlined SaaSOps",
+    description: [
+      "Workflow Automations",
+      "Employee App Store",
+      "Security and Compliance",
+      "Dedicated account manager",
+      "Audit logs",
+      "Custom reports"
+    ],
+    backgroundColor: "#C9E8FF"
+  },
 ];
 
 const S5 = (props) => {
@@ -62,15 +62,16 @@ const S5 = (props) => {
 
   const mobileCardDisplay = () => {
     if (isMobileView) {
-      const mostPopularIdx = concepts.findIndex((concept) => concept.isMiddleCard === true);
-      const firstElem = concepts[0];
+      const conceptsMobile = [...concepts];
+      const mostPopularIdx = conceptsMobile.findIndex((concept) => concept.isMiddleCard === true);
+      const firstElem = conceptsMobile[0];
 
-      concepts[0] = concepts[mostPopularIdx];
-      concepts[mostPopularIdx] = firstElem;
+      conceptsMobile[0] = conceptsMobile[mostPopularIdx];
+      conceptsMobile[mostPopularIdx] = firstElem;
 
       return (
         <StyledMobileView>
-          {concepts.map((concept, index) =>  
+          {conceptsMobile.map((concept, index) =>
             <Card
               key={index}
               image={concept.image}
@@ -101,7 +102,7 @@ const S5 = (props) => {
 
   return (
     <StyledContainer>
-      <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;300;400;500;600;700&display=swap" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;300;400;500;600;700&display=swap" rel="stylesheet" />
       <StyledTab>
         <StyledTabTitle>
           <h3>SaaS Management</h3>
