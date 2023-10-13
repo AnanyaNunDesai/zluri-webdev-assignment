@@ -46,7 +46,7 @@ export default class Navigation extends Component {
                 <StyledContainer>
                     <Brand>
                         <Link to="/" onClick={this.closeMobileMenu}>
-                            <h2>ZLURI</h2>
+                            <h2>Ananya Desai</h2>
                         </Link>
                     </Brand>
                     <Mobile>

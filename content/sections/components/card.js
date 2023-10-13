@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 const Card = (props) => {
   return (
@@ -7,7 +7,9 @@ const Card = (props) => {
       {props.isMiddleCard && <StyledPopularTitle>Most Popular</StyledPopularTitle>}
       <h1>{props.title}</h1>
       <h3>{props.image}</h3>
-      <button>Contact Sales</button>
+      <button>
+        <a href='https://www.zluri.com/contact/' target='_blank' rel='noreferrer'>Contact Sales</a>
+      </button>
       <ul>
         {props.description.map(bullet => <li>{bullet}</li>)}
       </ul>
