@@ -15,7 +15,9 @@ const Feedback = () => {
 
             <FeedbackDiv>
                 <p>
-                    Add your reply here
+                    This was such an interesting and fun task. I really enjoyed it and it wasn't too difficult,
+                     especially considering the position it is for! I learnt a lot as well and honed my research and error solving
+                     skills so that is also very nice. Thanks for extending me this opportunity!
                 </p>
             </FeedbackDiv>
             
