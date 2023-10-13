@@ -82,6 +82,12 @@ export default DropdownImg;
 const Container = styled.div`
   display: flex;
   align-items: center;
+
+    @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
 `;
 
 const DropdownContainer = styled.div`
@@ -91,6 +97,11 @@ const DropdownContainer = styled.div`
   background-color: #FFFFFF;
   border-radius: 7px;
   margin-right: 15px;
+
+    @media (max-width: 768px) {
+    margin-top: 10px;
+    width: 100%;
+  }
 
 `;
 
@@ -113,6 +124,10 @@ const DropdownToggle = styled.div`
     }
   }
   font-family: 'Lexend', sans-serif; /* Apply Lexend font */
+
+    @media (max-width: 768px) {
+    width: 100%; /* Adjust width for mobile */
+  }
 `;
 
 const DropdownMenu = styled.ul`
@@ -156,6 +171,11 @@ const ImageContainer = styled.div`
   border-radius: 2%;
   overflow: hidden;
   background-color: #FFFFFF;
+
+  @media (max-width: 768px) {
+    width: 100%; /* Adjust width for mobile */
+    margin: 20px auto; /* Center the image container horizontally */
+  }
 `;
 
 
