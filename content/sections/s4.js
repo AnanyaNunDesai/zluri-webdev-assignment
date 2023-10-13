@@ -1,7 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
 import { Container, Wrapper } from "./style";
-// import Dropdown from "./dropdown"
 import DropdownImg from "./components/drop-image";
 
 const S4 = () => {

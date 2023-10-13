@@ -54,8 +54,8 @@ h4{
 `
 
 const StyledLink = styled.a`
-    color: blue; /* Set the color to blue */
-    text-decoration: underline; /* Underline the text */
+    color: blue; 
+    text-decoration: underline; 
 `
 
 const QuestionsDiv = styled.div`

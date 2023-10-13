@@ -49,8 +49,8 @@ const DropdownImg = () => {
             <DropdownContainer ref={dropdownRef}>
                 <DropdownToggle
                     onClick={handleToggleDropdown}
-                    tabIndex="0" // Make the component focusable
-                    isOpen={isOpen} // Pass isOpen as a prop
+                    tabIndex="0" 
+                    isOpen={isOpen} 
                 >
                     {selectedOption ? selectedOption.label : 'Dropdown'}
                     <ArrowIcon className="arrow-icon" />
@@ -118,15 +118,15 @@ const DropdownToggle = styled.div`
   }
   &:focus {
     border-color: #5287E8;
-    color: #A8A8A8; /* Change the text color when the dropdown is active */
+    color: #A8A8A8; 
     > .arrow-icon {
-      border-top-color: #A8A8A8; /* Change the arrow icon color when the dropdown is active */
+      border-top-color: #A8A8A8; 
     }
   }
-  font-family: 'Lexend', sans-serif; /* Apply Lexend font */
+  font-family: 'Lexend', sans-serif; 
 
     @media (max-width: 768px) {
-    width: 100%; /* Adjust width for mobile */
+    width: 100%; 
   }
 `;
 
@@ -167,14 +167,14 @@ const ImageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px; /* Adjust margin as needed */
+  margin: 10px; 
   border-radius: 2%;
   overflow: hidden;
   background-color: #FFFFFF;
 
   @media (max-width: 768px) {
-    width: 100%; /* Adjust width for mobile */
-    margin: 20px auto; /* Center the image container horizontally */
+    width: 100%; 
+    margin: 20px auto; 
   }
 `;
 
