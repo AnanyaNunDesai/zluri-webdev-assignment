@@ -23,20 +23,23 @@ const StyledCard = styled.li`
   padding: 20px 20px 100px 20px;
   margin: 2px;
   max-width: 300px;
-  font-family: 'Sora';
   background-color: ${(props) => props.backgroundColor};
 
   h1 {
+    font-family: 'Sora';
     margin-top: 10px;
     font-weight: 600;
+    color: #141C32;
   }
 
   h3 {
+    font-family: 'Lexend';
     height: 20%;
     margin-top: -10px;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.5;
+    color: #393939;
   }
 
   p {
@@ -45,12 +48,14 @@ const StyledCard = styled.li`
   }
 
   button {
+    font-family: 'Sora';
     border-radius: 40px;
-    padding: 15px;
+    padding: 13px 15px;
     background-color: #ffffff;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 12px;
     border-width: 0.5px;
+    color: #2E2E2E;
   }
 
   ul {

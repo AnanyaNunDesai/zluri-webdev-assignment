@@ -6,7 +6,7 @@ import { Container } from "./style";
 const concepts = [
     {
         title: "Growth",
-        image: "Discover and manage all your apps in one place",
+        image: "Discover & manage all your apps in one place",
         description: [
           "Complete SaaS discovery",
           "Unlimited App Integrations",
