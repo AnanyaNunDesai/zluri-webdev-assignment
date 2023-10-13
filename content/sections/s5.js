@@ -166,6 +166,15 @@ const StyledTabTitle = styled.div`
     font-family: Lexend Regular;
     color: #545454;
   }
+
+    @media (max-width: 768px) {
+    width: 90%; 
+    margin: 15px auto;  
+
+    h3{
+        text-align: center;
+    }
+  }
 `;
 
 const StyledTabDivider = styled.div`
@@ -173,6 +182,11 @@ const StyledTabDivider = styled.div`
   background-color: #DDDDDD;
   height: 2px;
   background-image: linear-gradient(to right, #DDDDDD 18%, #FFCE70 18%, #FFCE70 40%, #DDDDDD 40%);
+
+    @media (max-width: 768px) {
+    width: 100%; 
+    margin-top: 10px; 
+  }
 `;
 
 const StyledList = styled.ul`
