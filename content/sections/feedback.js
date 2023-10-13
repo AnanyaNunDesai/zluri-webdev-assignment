@@ -5,30 +5,31 @@ import { Container, Wrapper } from "./style";
 const Feedback = () => {
     return (
         <StyledWrapper>
-        <Container >
-            <Title>
-                <h4>
-                    Thanks for taking up this assignment.
-                </h4>
-                <p>Anything you would like to add over here?</p>
-            </Title>
+            <Container >
+                <Title>
+                    <h4>
+                        Thanks for taking up this assignment.
+                    </h4>
+                    <p>Anything you would like to add over here?</p>
+                </Title>
 
-            <FeedbackDiv>
-                <p>
-                    This was such an interesting and fun task. I really enjoyed it and it wasn't too difficult,
-                     especially considering the position it is for! I learnt a lot as well and honed my research and error solving
-                     skills so that is also very nice. Thanks for extending me this opportunity!
-                </p>
-            </FeedbackDiv>
-            
-        </Container>
+                <FeedbackDiv>
+                    <p>
+                        This was such an interesting and fun task. I really enjoyed it and it wasn't very stressful,
+                        and I could complete it without worrying about the time crunch! I learnt a lot as well and
+                        honed my research and error solving
+                        skills so that is also very nice. Thanks for extending me this opportunity!
+                    </p>
+                </FeedbackDiv>
+
+            </Container>
         </StyledWrapper>
     )
 }
 
 export default Feedback
 
-const StyledWrapper=styled(Wrapper)`
+const StyledWrapper = styled(Wrapper)`
 background:#FFFFFF;
 `
 
@@ -52,7 +53,7 @@ font-weight: 400;
 line-height: 28px;
 }
 `
-const FeedbackDiv= styled.div`
+const FeedbackDiv = styled.div`
 p{
     font-size:24px;
     color:#000000;
